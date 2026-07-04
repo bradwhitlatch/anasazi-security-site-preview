@@ -1,7 +1,7 @@
 /* style.css — Anasazi Security design tokens + components */
 
 /* ============ FONTS ============ */
-@import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=cabinet-grotesk@700,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap');
 
 /* ============ TYPE SCALE ============ */
@@ -43,8 +43,9 @@
   --content-wide: 1280px;
   --content-full: 100%;
 
-  --font-display: 'Cinzel', 'General Sans', serif;
+  --font-display: 'Cabinet Grotesk', 'General Sans', sans-serif;
   --font-body: 'General Sans', 'Helvetica Neue', sans-serif;
+  --font-logo: 'Cinzel', 'General Sans', serif;
 }
 
 /* ============ COLOR — Anasazi: tactical black + desert-lime accent ============ */
@@ -195,15 +196,15 @@ section {
 h1,
 .h1 {
   font-family: var(--font-display);
-  font-weight: 600;
-  letter-spacing: 0.03em;
+  font-weight: 800;
+  letter-spacing: -0.02em;
   text-transform: uppercase;
 }
 h2,
 .h2 {
   font-family: var(--font-display);
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   font-size: var(--text-2xl);
   text-transform: uppercase;
   margin-bottom: var(--space-4);
@@ -211,8 +212,7 @@ h2,
 h3,
 .h3 {
   font-family: var(--font-display);
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-weight: 700;
   font-size: var(--text-lg);
 }
 p {
@@ -286,7 +286,7 @@ a {
   display: flex;
   align-items: center;
   gap: var(--space-3);
-  font-family: var(--font-display);
+  font-family: var(--font-logo);
   font-weight: 600;
   font-size: var(--text-base);
   letter-spacing: 0.18em;
@@ -385,7 +385,6 @@ a {
   display: block;
   font-family: var(--font-display);
   font-size: var(--text-xl);
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   padding-block: var(--space-4);
   border-bottom: 1px solid var(--color-divider);
@@ -487,8 +486,7 @@ a {
   font-family: var(--font-display);
   font-size: var(--text-xl);
   color: #fff;
-  font-weight: 600;
-  letter-spacing: 0.03em;
+  font-weight: 700;
 }
 .hero-stat-label {
   font-size: var(--text-xs);
@@ -580,8 +578,7 @@ a {
 }
 .price-amount {
   font-family: var(--font-display);
-  font-weight: 600;
-  letter-spacing: 0.02em;
+  font-weight: 800;
   font-size: var(--text-xl);
   color: var(--color-primary);
   line-height: 1;
@@ -644,7 +641,7 @@ a {
   font-family: var(--font-display);
   text-transform: uppercase;
   font-size: var(--text-xs);
-  letter-spacing: 0.12em;
+  letter-spacing: 0.06em;
   color: var(--color-text-muted);
 }
 .compare-table td:not(:first-child),
@@ -679,8 +676,7 @@ a {
   font-family: var(--font-display);
   font-size: var(--text-2xl);
   color: var(--color-primary);
-  font-weight: 600;
-  letter-spacing: 0.02em;
+  font-weight: 800;
 }
 .stat-label {
   font-size: var(--text-sm);
