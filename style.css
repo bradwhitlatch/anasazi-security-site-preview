@@ -486,7 +486,7 @@ a {
   font-family: var(--font-display);
   font-size: var(--text-xl);
   color: #fff;
-  font-weight: 700;
+  font-weight: 800;
 }
 .hero-stat-label {
   font-size: var(--text-xs);
