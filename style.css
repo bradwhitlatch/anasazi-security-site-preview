@@ -568,6 +568,23 @@ a {
 .service-card h3 {
   text-transform: uppercase;
 }
+.price-tag {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-1);
+  margin: 0;
+}
+.price-amount {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: var(--text-xl);
+  color: var(--color-primary);
+  line-height: 1;
+}
+.price-period {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
 .service-list {
   margin-top: auto;
   display: flex;
