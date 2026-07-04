@@ -375,7 +375,12 @@ a {
   align-items: center;
   margin-bottom: var(--space-12);
 }
+.mobile-menu nav {
+  display: flex;
+  flex-direction: column;
+}
 .mobile-menu a {
+  display: block;
   font-family: var(--font-display);
   font-size: var(--text-xl);
   text-transform: uppercase;
