@@ -348,11 +348,24 @@ a {
   .nav-links {
     display: none;
   }
-  .phone-link span {
+  .phone-link {
     display: none;
   }
   .nav-toggle {
     display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand {
+    font-size: var(--text-sm);
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+    gap: var(--space-2);
+  }
+  .brand svg {
+    width: 26px;
+    height: 26px;
   }
 }
 
@@ -498,6 +511,27 @@ a {
   .hero-stats {
     grid-template-columns: repeat(2, auto);
     row-gap: var(--space-6);
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    min-height: 78vh;
+    padding-top: var(--space-16);
+  }
+  .hero h1 {
+    font-size: clamp(2.1rem, 1.4rem + 4vw, 2.75rem);
+    max-width: 14ch;
+    margin-bottom: var(--space-4);
+  }
+  .hero-tag {
+    margin-bottom: var(--space-4);
+  }
+  .hero-sub {
+    font-size: var(--text-base);
+    margin-bottom: var(--space-6);
+  }
+  .hero-actions {
+    margin-bottom: var(--space-8);
   }
 }
 
