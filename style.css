@@ -357,15 +357,30 @@ a {
 }
 
 @media (max-width: 480px) {
-  .brand {
-    font-size: var(--text-sm);
-    letter-spacing: 0.08em;
-    white-space: nowrap;
+  .header-inner {
     gap: var(--space-2);
   }
+  .brand {
+    font-size: 0.65rem;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+    gap: var(--space-2);
+    overflow: hidden;
+    flex-shrink: 1;
+    min-width: 0;
+  }
   .brand svg {
-    width: 26px;
-    height: 26px;
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+  }
+  .header-cta {
+    flex-shrink: 0;
+    gap: var(--space-2);
+  }
+  .header-cta .btn--sm {
+    padding: var(--space-2) var(--space-3);
+    font-size: 0.65rem;
   }
 }
 
